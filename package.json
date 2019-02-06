@@ -1,11 +1,25 @@
 {
-  "name": "captcha-solver",
+  "name": "wlnk",
+  "description": "Link resolver for captcha protected links from \"wlnk.ec\"",
   "version": "1.0.0",
   "main": "index.js",
+  "bin": {
+    "wlnk": "./bin/wlnk.js"
+  },
   "license": "MIT",
   "dependencies": {
-    "brain.js": "^1.6.1",
-    "png-js": "^0.1.1",
+    "bluebird": "^3.5.3",
+    "cloudscraper": "^2.0.0",
+    "commander": "^2.19.0",
+    "figlet": "^1.2.1",
+    "lycos": "^1.0.1",
     "pngjs": "^3.3.3"
+  },
+  "prettier": {
+    "singleQuote": true,
+    "trailingComma": "none",
+    "parser": "flow",
+    "semi": true,
+    "tabWidth": 2
   }
 }
