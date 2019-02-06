@@ -6,7 +6,7 @@ const { dumpLetters, getLink } = require('../index');
 console.log(figlet.textSync('Wnlk', 'ANSI Shadow'));
 
 program
-  .usage('<link>')
+  .usage('<linkUrl>')
   .version('0.0.1')
   .option('-d, --dump', 'Dump captcha letters')
   .action(async function(cmd) {

@@ -9,7 +9,7 @@ $ cd wnlk
 $ npm link
 ```
 
-## Usage
+## CLI Usage
 
 ```bash
 ██╗    ██╗███╗   ██╗██╗     ██╗  ██╗
@@ -19,12 +19,26 @@ $ npm link
 ╚███╔███╔╝██║ ╚████║███████╗██║  ██╗
  ╚══╝╚══╝ ╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝
 
-Usage: wlnk <link>
+Usage: wlnk <linkUrl>
 
 Options:
   -V, --version  output the version number
   -d, --dump     Dump captcha letters
   -h, --help     output usage information
+```
+
+## Library usage
+
+### getLink
+
+```js
+const { getLink } = require('wnlk');
+
+(async () => {
+  // Resolve a captcha protected link
+  const resolvedLink = await getLink('{YOUR_LINK_URL}');
+  console.log(resolvedLink);
+})();
 ```
 
 ## Note
