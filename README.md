@@ -2,6 +2,10 @@
 
 Link resolver for captcha protected links from "wlnk.ec".
 
+## Captcha example
+
+![Captcha example](./captcha-example.png)
+
 ## Install
 ```bash
 $ git clone https://github.com/JimmyLaurent/wnlk
